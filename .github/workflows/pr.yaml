@@ -9,8 +9,8 @@ jobs:
      steps:
        - name: get the code
          uses: actions/checkout@v6
-       - name: complie phase 
-         run: mvn complie 
+       - name: compile phase 
+         run: mvn compile
        - name: test phase 
          run: mvn test 
        - name: package phase 
