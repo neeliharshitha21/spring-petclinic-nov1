@@ -1,5 +1,5 @@
------
-name:  workflow-1
+---
+name: workflow-1
 on:
   pull_request:
     branches:
@@ -8,6 +8,8 @@ jobs:
    build:
      runs-on: ubuntu-latest 
      steps:
+       - name: get the code
+         uses: actions/checkout@v6
        - name: complie phase 
          run: mvn complie 
        - name: test phase 
