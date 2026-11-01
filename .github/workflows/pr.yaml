@@ -1,5 +1,4 @@
----
-name: workflow-1
+name: pull request-1
 on:
   pull_request:
     branches:
